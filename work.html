@@ -1,0 +1,2313 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/svg+xml" href="./assets/images/Wellsfavicon.png" />
+    <title>Work | Wells Resumé</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Custom Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#ff2c2c",
+            },
+            boxShadow: {
+              glow: "0 0 20px rgba(255,44,44,0.7)",
+              glowStrong: "0 0 35px rgba(255,44,44,0.9)",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @keyframes scaleIn {
+        from {
+          opacity: 0;
+          transform: scale(0.9);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      .animate-scaleIn {
+        animation: scaleIn 0.3s ease-out;
+      }
+    </style>
+    <style>
+      /* Scrollbar Styling */
+      html {
+        scroll-behavior: smooth;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #1f2937;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #ff2c2c;
+        border-radius: 4px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #e02424;
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white overflow-x-hidden">
+    <!-- ================= NAVBAR ================= -->
+    <nav
+      id="navbar"
+      class="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-6 md:px-10 lg:px-24 py-6 bg-gray-900 border-b-2 border-primary"
+    >
+      <!-- Logo -->
+      <div class="flex items-center gap-2 font-bold text-2xl">
+        <a href="./index.html">
+          <span class="text-primary text-3xl">WELLS</span>
+        </a>
+      </div>
+
+      <!-- Desktop Links -->
+      <div
+        class="hidden md:flex items-center gap-12 text-gray-300 text-base lg:text-lg"
+      >
+        <a
+          href="./work.html"
+          class="relative group hover:text-white transition"
+        >
+          Work
+          <span
+            class="absolute left-0 -bottom-1 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"
+          ></span>
+        </a>
+
+        <a
+          href="./about.html"
+          class="relative group hover:text-white transition"
+        >
+          About
+          <span
+            class="absolute left-0 -bottom-1 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"
+          ></span>
+        </a>
+
+        <a href="./contact.html" class="relative group hover:text-white transition">
+          Contact
+          <span
+            class="absolute left-0 -bottom-1 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"
+          ></span>
+        </a>
+
+        <a
+          href="./contact.html"
+          class="bg-primary px-7 py-3 rounded-full font-semibold hover:shadow-glowStrong transition duration-300"
+        >
+          Hire Me
+        </a>
+      </div>
+
+      <!-- Hamburger -->
+      <button id="menuBtn" class="md:hidden text-white text-3xl">☰</button>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobileMenu"
+        class="fixed top-0 right-0 h-full w-[80%] max-w-sm bg-black border-l border-gray-800 transform translate-x-full transition-transform duration-300 flex flex-col items-center justify-center gap-8 text-gray-300 text-xl md:hidden z-50"
+      >
+        <button
+          id="closeMenu"
+          class="absolute top-6 right-6 text-3xl text-white"
+        >
+          ✕
+        </button>
+
+        <a href="./work.html">Work</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+
+        <a href="./contact.html" class="bg-primary px-8 py-3 rounded-full font-semibold">
+          Hire Me
+        </a>
+      </div>
+    </nav>
+    <div class="h-[96px]"></div>
+    <!-- ================= SCROLL TO TOP BTN ================= -->
+    <button
+      id="scrollTopBtn"
+      class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-12 h-12 rounded-full bg-primary text-white shadow-lg hover:shadow-glow transition-all duration-500 ease-out translate-x-20 opacity-0 pointer-events-none"
+    >
+      <ion-icon name="arrow-up-outline" class="text-2xl"></ion-icon>
+    </button>
+
+    <!-- ================= PROJECTS 1 ================= -->
+    <section class="px-6 md:px-10 lg:px-24 py-24 bg-black to-black text-white">
+      <!-- Header -->
+      <div class="flex justify-center mb-14">
+        <div class="text-center">
+          <p class="text-primary text-xs tracking-widest uppercase mb-3">
+            Selected Works
+          </p>
+
+          <h2 class="text-4xl md:text-5xl lg:text-6xl font-serif mb-4">
+            Portfolio
+          </h2>
+
+          <p class="text-gray-400 max-w-xl mx-auto text-sm md:text-base">
+            A curated collection of my best work across branding, digital
+            design, and visual identity projects
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <p class="mb-8 text-primary uppercase text-sm tracking-widest mb-2">
+          Product Design
+        </p>
+      </div>
+
+      <!-- Slider Wrapper -->
+      <div class="portfolio-wrapper relative mt-10">
+        <!-- Fade Edges -->
+        <div
+          class="pointer-events-none absolute left-0 top-0 h-full w-16 bg-gradient-to-r from-black to-transparent z-10"
+        ></div>
+
+        <div
+          class="pointer-events-none absolute right-0 top-0 h-full w-16 bg-gradient-to-l from-black to-transparent z-10"
+        ></div>
+
+        <!-- Left Arrow -->
+        <button
+          class="portfolio-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 bg-black/70 hover:bg-primary text-white hover:text-black w-10 h-10 rounded-full flex items-center justify-center transition"
+        >
+          ‹
+        </button>
+
+        <!-- Right Arrow -->
+        <button
+          class="portfolio-next absolute right-3 top-1/2 -translate-y-1/2 z-20 bg-black/70 hover:bg-primary text-white hover:text-black w-10 h-10 rounded-full flex items-center justify-center transition"
+        >
+          ›
+        </button>
+
+        <!-- Track -->
+        <div
+          class="portfolio-slider flex gap-8 overflow-x-hidden scroll-smooth py-6"
+        >
+          <!-- CARD 1 -->
+          <div
+            onclick="
+              openModal(
+                './assets/images/TeeKeyzHub New Week Flyer .jpg',
+                './assets/images/TEEKEYZ1.jpeg',
+                './assets/images/TEEKEYZ2.jpeg',
+                'Brand Identity Design',
+                'A complete branding system designed to establish strong visual presence and audience engagement.',
+              )
+            "
+            class="portfolio-card min-w-[280px] md:min-w-[45%] lg:min-w-[30%] group relative rounded-2xl overflow-hidden bg-zinc-900 shadow-lg hover:shadow-glowStrong transition duration-500 cursor-pointer"
+          >
+            <img
+              src="./assets/images/TeeKeyzHub New Week Flyer .jpg"
+              class="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
+            />
+
+            <!-- Overlay -->
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+            ></div>
+
+            <!-- Content -->
+            <div
+              class="absolute bottom-0 left-0 right-0 p-6 translate-y-6 group-hover:translate-y-0 transition duration-500"
+            >
+              <span class="text-xs uppercase text-primary tracking-widest">
+                Product Design
+              </span>
+
+              <h3 class="text-xl font-semibold mt-2 mb-3">
+                Product Advertisement
+              </h3>
+
+              <button
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-black transition"
+              >
+                View More →
+              </button>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div
+            onclick="
+              openModal(
+                './assets/images/David Flyer (2).jpg',
+                './assets/images/David Flyer (2).jpg',
+                './assets/images/David Flyer (2).jpg',
+                'Brand Identity Design',
+                'This flyer is a modern promotional marketing design for a tech/gadget brand.',
+              )
+            "
+            class="portfolio-card min-w-[280px] md:min-w-[45%] lg:min-w-[30%] group relative rounded-2xl overflow-hidden bg-zinc-900 shadow-lg hover:shadow-glowStrong transition duration-500 cursor-pointer"
+          >
+            <img
+              src="./assets/images/David Flyer (2).jpg"
+              class="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+            ></div>
+
+            <div
+              class="absolute bottom-0 left-0 right-0 p-6 translate-y-6 group-hover:translate-y-0 transition duration-500"
+            >
+              <span class="text-xs uppercase text-primary tracking-widest">
+                Product Design
+              </span>
+
+              <h3 class="text-xl font-semibold mt-2 mb-3">
+                Product Advertisement
+              </h3>
+
+              <button
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-black transition"
+              >
+                View More →
+              </button>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div
+            onclick="
+              openModal(
+                './assets/images/TEEKEYZ0.jpeg',
+                './assets/images/TEEKEYZ1.jpeg',
+                './assets/images/TEEKEYZ2.jpeg',
+                'Brand Identity Design',
+                'This flyer is a modern promotional marketing design for a tech/gadget brand.',
+              )
+            "
+            class="portfolio-card min-w-[280px] md:min-w-[45%] lg:min-w-[30%] group relative rounded-2xl overflow-hidden bg-zinc-900 shadow-lg hover:shadow-glowStrong transition duration-500 cursor-pointer"
+          >
+            <img
+              src="./assets/images/TEEKEYZ0.jpeg"
+              class="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+            ></div>
+
+            <div
+              class="absolute bottom-0 left-0 right-0 p-6 translate-y-6 group-hover:translate-y-0 transition duration-500"
+            >
+              <span class="text-xs uppercase text-primary tracking-widest">
+                Product Design
+              </span>
+
+              <h3 class="text-xl font-semibold mt-2 mb-3">
+                Product Advertisement
+              </h3>
+
+              <button
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-black transition"
+              >
+                View More →
+              </button>
+            </div>
+          </div>
+
+          <!-- CARD 4 -->
+          <div
+            onclick="
+              openModal(
+                './assets/images/Modern cap.jpeg',
+                './assets/images/Modern cap.jpeg',
+                './assets/images/Modern cap.jpeg',
+                'Brand Identity Design',
+                'A complete branding system designed to establish strong visual presence and audience engagement.',
+              )
+            "
+            class="portfolio-card min-w-[280px] md:min-w-[45%] lg:min-w-[30%] group relative rounded-2xl overflow-hidden bg-zinc-900 shadow-lg hover:shadow-glowStrong transition duration-500 cursor-pointer"
+          >
+            <img
+              src="./assets/images/Modern cap.jpeg"
+              class="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+            ></div>
+
+            <div
+              class="absolute bottom-0 left-0 right-0 p-6 translate-y-6 group-hover:translate-y-0 transition duration-500"
+            >
+              <span class="text-xs uppercase text-primary tracking-widest">
+                Product Design
+              </span>
+
+              <h3 class="text-xl font-semibold mt-2 mb-3">
+                Product Advertisement
+              </h3>
+
+              <button
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-black transition"
+              >
+                View More →
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dots -->
+        <div class="portfolio-dots flex justify-center gap-3 mt-6"></div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS 2 ================= -->
+    <section
+      class="px-6 md:px-10 lg:px-24 py-24 bg-gray-900 to-black text-white"
+    >
+      <div>
+        <p class="mb-8 text-primary uppercase text-sm tracking-widest mb-2">
+          Church & media design
+        </p>
+      </div>
+
+      <!-- Slider Wrapper -->
+      <div class="portfolio-wrapper relative mt-10">
+        <!-- Fade Edges -->
+        <div
+          class="pointer-events-none absolute left-0 top-0 h-full w-16 bg-gradient-to-r from-black to-transparent z-10"
+        ></div>
+
+        <div
+          class="pointer-events-none absolute right-0 top-0 h-full w-16 bg-gradient-to-l from-black to-transparent z-10"
+        ></div>
+
+        <!-- Left Arrow -->
+        <button
+          class="portfolio-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 bg-black/70 hover:bg-primary text-white hover:text-black w-10 h-10 rounded-full flex items-center justify-center transition"
+        >
+          ‹
+        </button>
+
+        <!-- Right Arrow -->
+        <button
+          class="portfolio-next absolute right-3 top-1/2 -translate-y-1/2 z-20 bg-black/70 hover:bg-primary text-white hover:text-black w-10 h-10 rounded-full flex items-center justify-center transition"
+        >
+          ›
+        </button>
+
+        <!-- Track -->
+        <div
+          class="portfolio-slider flex gap-8 overflow-x-hidden scroll-smooth py-6"
+        >
+          <!-- CARD 1 -->
+          <div
+            onclick="
+              openModal(
+                './assets/images/HOD.jpeg',
+                './assets/images/HOD.jpeg',
+                './assets/images/HOD.jpeg',
+                'Church & Media Design',
+                'A complete branding system designed to establish strong visual presence and audience engagement.',
+              )
+            "
+            class="portfolio-card min-w-[280px] md:min-w-[45%] lg:min-w-[30%] group relative rounded-2xl overflow-hidden bg-zinc-900 shadow-lg hover:shadow-glowStrong transition duration-500 cursor-pointer"
+          >
+            <img
+              src="./assets/images/HOD.jpeg"
+              class="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
+            />
+
+            <!-- Overlay -->
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+            ></div>
+
+            <!-- Content -->
+            <div
+              class="absolute bottom-0 left-0 right-0 p-6 translate-y-6 group-hover:translate-y-0 transition duration-500"
+            >
+              <span class="text-xs uppercase text-primary tracking-widest">
+                Church & Media Design
+              </span>
+
+              <h3 class="text-xl font-semibold mt-2 mb-3">
+                Teens Poster Design
+              </h3>
+
+              <button
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-black transition"
+              >
+                View More →
+              </button>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div
+            onclick="
+              openModal(
+                './assets/images/HOD2.jpeg',
+                './assets/images/HOD2.jpeg',
+                './assets/images/HOD2.jpeg',
+                'Church & Media Design',
+                'A complete branding system designed to establish strong visual presence and audience engagement.',
+              )
+            "
+            class="portfolio-card min-w-[280px] md:min-w-[45%] lg:min-w-[30%] group relative rounded-2xl overflow-hidden bg-zinc-900 shadow-lg hover:shadow-glowStrong transition duration-500 cursor-pointer"
+          >
+            <img
+              src="./assets/images/HOD2.jpeg"
+              class="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+            ></div>
+
+            <div
+              class="absolute bottom-0 left-0 right-0 p-6 translate-y-6 group-hover:translate-y-0 transition duration-500"
+            >
+              <span class="text-xs uppercase text-primary tracking-widest">
+                Church & Media Design
+              </span>
+
+              <h3 class="text-xl font-semibold mt-2 mb-3">
+                Sunday Service Poster Flyer
+              </h3>
+
+              <button
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-black transition"
+              >
+                View More →
+              </button>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div
+            onclick="
+              openModal(
+                './assets/images/HOD3.jpeg',
+                './assets/images/HOD3.jpeg',
+                './assets/images/HOD3.jpeg',
+                'Church & Media Design',
+                'A complete branding system designed to establish strong visual presence and audience engagement.',
+              )
+            "
+            class="portfolio-card min-w-[280px] md:min-w-[45%] lg:min-w-[30%] group relative rounded-2xl overflow-hidden bg-zinc-900 shadow-lg hover:shadow-glowStrong transition duration-500 cursor-pointer"
+          >
+            <img
+              src="./assets/images/HOD3.jpeg"
+              class="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+            ></div>
+
+            <div
+              class="absolute bottom-0 left-0 right-0 p-6 translate-y-6 group-hover:translate-y-0 transition duration-500"
+            >
+              <span class="text-xs uppercase text-primary tracking-widest">
+                Product Design
+              </span>
+
+              <h3 class="text-xl font-semibold mt-2 mb-3">
+                Sunday Service Poster Flyer
+              </h3>
+
+              <button
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-black transition"
+              >
+                View More →
+              </button>
+            </div>
+          </div>
+
+          <!-- CARD 4 -->
+          <div
+            onclick="
+              openModal(
+                './assets/images/HSPCC1.jpeg',
+                './assets/images/HSPCC1.jpeg',
+                './assets/images/HSPCC1.jpeg',
+                'Church & Media Design',
+                'A complete branding system designed to establish strong visual presence and audience engagement.',
+              )
+            "
+            class="portfolio-card min-w-[280px] md:min-w-[45%] lg:min-w-[30%] group relative rounded-2xl overflow-hidden bg-zinc-900 shadow-lg hover:shadow-glowStrong transition duration-500 cursor-pointer"
+          >
+            <img
+              src="./assets/images/HSPCC1.jpeg"
+              class="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+            ></div>
+
+            <div
+              class="absolute bottom-0 left-0 right-0 p-6 translate-y-6 group-hover:translate-y-0 transition duration-500"
+            >
+              <span class="text-xs uppercase text-primary tracking-widest">
+                Church & Media Design
+              </span>
+
+              <h3 class="text-xl font-semibold mt-2 mb-3">
+                Prayer Meeting Flyer
+              </h3>
+
+              <button
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-black transition"
+              >
+                View More →
+              </button>
+            </div>
+          </div>
+
+          <!-- CARD 5 -->
+          <div
+            onclick="
+              openModal(
+                './assets/images/HSPCC Consecration .jpg',
+                './assets/images/HSPCC Consecration .jpg',
+                './assets/images/HSPCC Consecration .jpg',
+                'Church & Media Design',
+                'A complete branding system designed to establish strong visual presence and audience engagement.',
+              )
+            "
+            class="portfolio-card min-w-[280px] md:min-w-[45%] lg:min-w-[30%] group relative rounded-2xl overflow-hidden bg-zinc-900 shadow-lg hover:shadow-glowStrong transition duration-500 cursor-pointer"
+          >
+            <img
+              src="./assets/images/HSPCC Consecration .jpg"
+              class="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+            ></div>
+
+            <div
+              class="absolute bottom-0 left-0 right-0 p-6 translate-y-6 group-hover:translate-y-0 transition duration-500"
+            >
+              <span class="text-xs uppercase text-primary tracking-widest">
+                Church & Media Design
+              </span>
+
+              <h3 class="text-xl font-semibold mt-2 mb-3">
+                Prayer Meeting Flyer
+              </h3>
+
+              <button
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-black transition"
+              >
+                View More →
+              </button>
+            </div>
+          </div>
+
+          <!-- CARD 6 -->
+          <div
+            onclick="
+              openModal(
+                './assets/images/HSPCC2.jpeg',
+                './assets/images/HSPCC2.jpeg',
+                './assets/images/HSPCC2.jpeg',
+                'Church & Media Design',
+                'A complete branding system designed to establish strong visual presence and audience engagement.',
+              )
+            "
+            class="portfolio-card min-w-[280px] md:min-w-[45%] lg:min-w-[30%] group relative rounded-2xl overflow-hidden bg-zinc-900 shadow-lg hover:shadow-glowStrong transition duration-500 cursor-pointer"
+          >
+            <img
+              src="./assets/images/HSPCC2.jpeg"
+              class="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+            ></div>
+
+            <div
+              class="absolute bottom-0 left-0 right-0 p-6 translate-y-6 group-hover:translate-y-0 transition duration-500"
+            >
+              <span class="text-xs uppercase text-primary tracking-widest">
+                Church & Media Design
+              </span>
+
+              <h3 class="text-xl font-semibold mt-2 mb-3">
+                Prayer Meeting Flyer
+              </h3>
+
+              <button
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-black transition"
+              >
+                View More →
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dots -->
+        <div class="portfolio-dots flex justify-center gap-3 mt-6"></div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS 3 ================= -->
+    <section class="px-6 md:px-10 lg:px-24 py-24 bg-black to-black text-white">
+      <div>
+        <p class="mb-8 text-primary uppercase text-sm tracking-widest mb-2">
+          Carousel Poster Design
+        </p>
+      </div>
+
+      <!-- Slider Wrapper -->
+      <div class="portfolio-wrapper relative mt-10">
+        <!-- Fade Edges -->
+        <div
+          class="pointer-events-none absolute left-0 top-0 h-full w-16 bg-gradient-to-r from-black to-transparent z-10"
+        ></div>
+
+        <div
+          class="pointer-events-none absolute right-0 top-0 h-full w-16 bg-gradient-to-l from-black to-transparent z-10"
+        ></div>
+
+        <!-- Left Arrow -->
+        <button
+          class="portfolio-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 bg-black/70 hover:bg-primary text-white hover:text-black w-10 h-10 rounded-full flex items-center justify-center transition"
+        >
+          ‹
+        </button>
+
+        <!-- Right Arrow -->
+        <button
+          class="portfolio-next absolute right-3 top-1/2 -translate-y-1/2 z-20 bg-black/70 hover:bg-primary text-white hover:text-black w-10 h-10 rounded-full flex items-center justify-center transition"
+        >
+          ›
+        </button>
+
+        <!-- Track -->
+        <div
+          class="portfolio-slider flex gap-8 overflow-x-hidden scroll-smooth py-6"
+        >
+          <!-- CARD 1 -->
+          <div
+            onclick="
+              openModal(
+                './assets/images/Ritebite2.jpeg',
+                './assets/images/Ritebite3.jpeg',
+                './assets/images/Ritebite4.jpeg',
+                'Carousel Poster Design',
+                'Designed this carousel posters for Ritebite Foods to promote their healthy snacks and engage their audience on social media platforms.',
+              )
+            "
+            class="portfolio-card min-w-[280px] md:min-w-[45%] lg:min-w-[30%] group relative rounded-2xl overflow-hidden bg-zinc-900 shadow-lg hover:shadow-glowStrong transition duration-500 cursor-pointer"
+          >
+            <img
+              src="./assets/images/Ritebite1.jpeg"
+              class="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
+            />
+
+            <!-- Overlay -->
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+            ></div>
+
+            <!-- Content -->
+            <div
+              class="absolute bottom-0 left-0 right-0 p-6 translate-y-6 group-hover:translate-y-0 transition duration-500"
+            >
+              <span class="text-xs uppercase text-primary tracking-widest">
+                Carousel Poster Design
+              </span>
+
+              <h3 class="text-xl font-semibold mt-2 mb-3">Ritebite Foods</h3>
+
+              <button
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-black transition"
+              >
+                View More →
+              </button>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div
+            onclick="
+              openModal(
+                './assets/images/Wellsburger2.jpeg',
+                './assets/images/Wellsburger3.jpeg',
+                './assets/images/Wellsburger4.jpeg',
+                'Carousel Poster Design',
+                'Designed this carousel posters for Ritebite Foods to promote their healthy snacks and engage their audience on social media platforms.',
+              )
+            "
+            class="portfolio-card min-w-[280px] md:min-w-[45%] lg:min-w-[30%] group relative rounded-2xl overflow-hidden bg-zinc-900 shadow-lg hover:shadow-glowStrong transition duration-500 cursor-pointer"
+          >
+            <img
+              src="./assets/images/Wellsburger1.jpeg"
+              class="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+            ></div>
+
+            <div
+              class="absolute bottom-0 left-0 right-0 p-6 translate-y-6 group-hover:translate-y-0 transition duration-500"
+            >
+              <span class="text-xs uppercase text-primary tracking-widest">
+                Church & Media Design
+              </span>
+
+              <h3 class="text-xl font-semibold mt-2 mb-3">
+                Wellsburger Poster Design
+              </h3>
+
+              <button
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-black transition"
+              >
+                View More →
+              </button>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div
+            onclick="
+              openModal(
+                './assets/images/Hotdog.jpeg',
+                './assets/images',
+                './assets/images',
+                'Carousel Poster Design',
+                'Designed this flyer to promote their healthy snacks and engage their audience on social media platforms.',
+              )
+            "
+            class="portfolio-card min-w-[280px] md:min-w-[45%] lg:min-w-[30%] group relative rounded-2xl overflow-hidden bg-zinc-900 shadow-lg hover:shadow-glowStrong transition duration-500 cursor-pointer"
+          >
+            <img
+              src="./assets/images/Hotdog.jpeg"
+              class="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+            ></div>
+
+            <div
+              class="absolute bottom-0 left-0 right-0 p-6 translate-y-6 group-hover:translate-y-0 transition duration-500"
+            >
+              <span class="text-xs uppercase text-primary tracking-widest">
+                Carousel Poster Design
+              </span>
+
+              <h3 class="text-xl font-semibold mt-2 mb-3">
+                Hotdog Poster Design
+              </h3>
+
+              <button
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-black transition"
+              >
+                View More →
+              </button>
+            </div>
+          </div>
+
+          <!-- CARD 4 -->
+          <div
+            onclick="
+              openModal(
+                './assets/images/Shawarmer.jpeg',
+                './assets/images/Shawarmer.jpeg',
+                './assets/images/Shawarmer.jpeg',
+                'Carousel Poster Design',
+                'Designed this flyer to promote their healthy snacks and engage their audience on social media platforms.',
+              )
+            "
+            class="portfolio-card min-w-[280px] md:min-w-[45%] lg:min-w-[30%] group relative rounded-2xl overflow-hidden bg-zinc-900 shadow-lg hover:shadow-glowStrong transition duration-500 cursor-pointer"
+          >
+            <img
+              src="./assets/images/Shawarmer.jpeg"
+              class="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+            ></div>
+
+            <div
+              class="absolute bottom-0 left-0 right-0 p-6 translate-y-6 group-hover:translate-y-0 transition duration-500"
+            >
+              <span class="text-xs uppercase text-primary tracking-widest">
+                Carousel Poster Design
+              </span>
+
+              <h3 class="text-xl font-semibold mt-2 mb-3">Shawarmer</h3>
+
+              <button
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-black transition"
+              >
+                View More →
+              </button>
+            </div>
+          </div>
+
+          <!-- CARD 5 -->
+          <div
+            onclick="
+              openModal(
+                './assets/images/Tastiva.jpeg',
+                './assets/images/Tastiva.jpeg',
+                './assets/images/Tastiva.jpeg',
+                'Carousel Poster Design',
+                'Designed this flyer to promote their healthy snacks and engage their audience on social media platforms.',
+              )
+            "
+            class="portfolio-card min-w-[280px] md:min-w-[45%] lg:min-w-[30%] group relative rounded-2xl overflow-hidden bg-zinc-900 shadow-lg hover:shadow-glowStrong transition duration-500 cursor-pointer"
+          >
+            <img
+              src="./assets/images/Tastiva.jpeg"
+              class="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+            ></div>
+
+            <div
+              class="absolute bottom-0 left-0 right-0 p-6 translate-y-6 group-hover:translate-y-0 transition duration-500"
+            >
+              <span class="text-xs uppercase text-primary tracking-widest">
+                Carousel Poster Design
+              </span>
+
+              <h3 class="text-xl font-semibold mt-2 mb-3">
+                Tastiva Restaurant
+              </h3>
+
+              <button
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-black transition"
+              >
+                View More →
+              </button>
+            </div>
+          </div>
+
+             <!-- CARD 6 -->
+          <div
+            onclick="
+              openModal(
+                './assets/images/Wellsfoods.jpeg',
+                './assets/images/Wellsfoods.jpeg',
+                './assets/images/Wellsfoods.jpeg',
+                'Carousel Poster Design',
+                'Designed this flyer to promote their healthy snacks and engage their audience on social media platforms.',
+              )
+            "
+            class="portfolio-card min-w-[280px] md:min-w-[45%] lg:min-w-[30%] group relative rounded-2xl overflow-hidden bg-zinc-900 shadow-lg hover:shadow-glowStrong transition duration-500 cursor-pointer"
+          >
+            <img
+              src="./assets/images/Wellsfoods.jpeg"
+              class="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+            ></div>
+
+            <div
+              class="absolute bottom-0 left-0 right-0 p-6 translate-y-6 group-hover:translate-y-0 transition duration-500"
+            >
+              <span class="text-xs uppercase text-primary tracking-widest">
+                Carousel Poster Design
+              </span>
+
+              <h3 class="text-xl font-semibold mt-2 mb-3">
+                Wells Foods
+              </h3>
+
+              <button
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-black transition"
+              >
+                View More →
+              </button>
+            </div>
+          </div>
+
+                  <!-- CARD 7 -->
+          <div
+            onclick="
+              openModal(
+                './assets/images/Wellsfoods2.jpeg',
+                './assets/images/Wellsfoods2.jpeg',
+                './assets/images/Wellsfoods2.jpeg',
+                'Carousel Poster Design',
+                'Designed this flyer to promote their healthy snacks and engage their audience on social media platforms.',
+              )
+            "
+            class="portfolio-card min-w-[280px] md:min-w-[45%] lg:min-w-[30%] group relative rounded-2xl overflow-hidden bg-zinc-900 shadow-lg hover:shadow-glowStrong transition duration-500 cursor-pointer"
+          >
+            <img
+              src="./assets/images/Wellsfoods2.jpeg"
+              class="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+            ></div>
+
+            <div
+              class="absolute bottom-0 left-0 right-0 p-6 translate-y-6 group-hover:translate-y-0 transition duration-500"
+            >
+              <span class="text-xs uppercase text-primary tracking-widest">
+                Carousel Poster Design
+              </span>
+
+              <h3 class="text-xl font-semibold mt-2 mb-3">
+                Wells Eatery
+              </h3>
+
+              <button
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-black transition"
+              >
+                View More →
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dots -->
+        <div class="portfolio-dots flex justify-center gap-3 mt-6"></div>
+      </div>
+    </section>
+
+        <!-- ================= PROJECTS 4 ================= -->
+    <section class="px-6 md:px-10 lg:px-24 py-24 bg-gray-900 to-black text-white">
+      <div>
+        <p class="mb-8 text-primary uppercase text-sm tracking-widest mb-2">
+          Other Brand Identity Designs
+        </p>
+      </div>
+
+      <!-- Slider Wrapper -->
+      <div class="portfolio-wrapper relative mt-10">
+        <!-- Fade Edges -->
+        <div
+          class="pointer-events-none absolute left-0 top-0 h-full w-16 bg-gradient-to-r from-black to-transparent z-10"
+        ></div>
+
+        <div
+          class="pointer-events-none absolute right-0 top-0 h-full w-16 bg-gradient-to-l from-black to-transparent z-10"
+        ></div>
+
+        <!-- Left Arrow -->
+        <button
+          class="portfolio-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 bg-black/70 hover:bg-primary text-white hover:text-black w-10 h-10 rounded-full flex items-center justify-center transition"
+        >
+          ‹
+        </button>
+
+        <!-- Right Arrow -->
+        <button
+          class="portfolio-next absolute right-3 top-1/2 -translate-y-1/2 z-20 bg-black/70 hover:bg-primary text-white hover:text-black w-10 h-10 rounded-full flex items-center justify-center transition"
+        >
+          ›
+        </button>
+
+        <!-- Track -->
+        <div
+          class="portfolio-slider flex gap-8 overflow-x-hidden scroll-smooth py-6"
+        >
+          <!-- CARD 1 -->
+          <div
+            onclick="
+              openModal(
+                './assets/images/Jadore1.jpeg',
+                './assets/images/Jadore2.jpeg',
+                './assets/images/Jadore3.jpeg',
+                'Business Card Design',
+                'Designed these business card for Jadore brand, to promote their products and engage their audience on tradittional marketing space.',
+              )
+            "
+            class="portfolio-card min-w-[280px] md:min-w-[45%] lg:min-w-[30%] group relative rounded-2xl overflow-hidden bg-zinc-900 shadow-lg hover:shadow-glowStrong transition duration-500 cursor-pointer"
+          >
+            <img
+              src="./assets/images/Jadore1.jpeg"
+              class="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
+            />
+
+            <!-- Overlay -->
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+            ></div>
+
+            <!-- Content -->
+            <div
+              class="absolute bottom-0 left-0 right-0 p-6 translate-y-6 group-hover:translate-y-0 transition duration-500"
+            >
+              <span class="text-xs uppercase text-primary tracking-widest">
+                Business Card
+              </span>
+
+              <h3 class="text-xl font-semibold mt-2 mb-3">J-Adore Business Card</h3>
+
+              <button
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-black transition"
+              >
+                View More →
+              </button>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div
+            onclick="
+              openModal(
+                './assets/images/Haven Wear.jpeg',
+                './assets/images/Haven Wear3.jpeg',
+                './assets/images/Haven Wear4.jpeg',
+                'Brand Identity Design',
+                'Designed this brand identity for Haven-Wear, to promote their products and engage their audience on social media platforms.',
+              )
+            "
+            class="portfolio-card min-w-[280px] md:min-w-[45%] lg:min-w-[30%] group relative rounded-2xl overflow-hidden bg-zinc-900 shadow-lg hover:shadow-glowStrong transition duration-500 cursor-pointer"
+          >
+            <img
+              src="./assets/images/Haven Wear.jpeg"
+              class="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+            ></div>
+
+            <div
+              class="absolute bottom-0 left-0 right-0 p-6 translate-y-6 group-hover:translate-y-0 transition duration-500"
+            >
+              <span class="text-xs uppercase text-primary tracking-widest">
+                
+                Brand Identity Design
+              </span>
+
+              <h3 class="text-xl font-semibold mt-2 mb-3">
+                Haven Wear
+              </h3>
+
+              <button
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-black transition"
+              >
+                View More →
+              </button>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div
+            onclick="
+              openModal(
+                './assets/images/Ope wears.jpeg',
+                './assets/images/Ope wears2.jpeg',
+                './assets/images/Ope wears3.jpeg',
+                'Brand Promotion',
+                'Designed this flyer to promote their brand and engage their audience on social media platforms.',
+              )
+            "
+            class="portfolio-card min-w-[280px] md:min-w-[45%] lg:min-w-[30%] group relative rounded-2xl overflow-hidden bg-zinc-900 shadow-lg hover:shadow-glowStrong transition duration-500 cursor-pointer"
+          >
+            <img
+              src="./assets/images/Ope wears.jpeg"
+              class="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+            ></div>
+
+            <div
+              class="absolute bottom-0 left-0 right-0 p-6 translate-y-6 group-hover:translate-y-0 transition duration-500"
+            >
+              <span class="text-xs uppercase text-primary tracking-widest">
+                Brand Promotion
+              </span>
+
+              <h3 class="text-xl font-semibold mt-2 mb-3">
+                Ope Wears
+              </h3>
+
+              <button
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-black transition"
+              >
+                View More →
+              </button>
+            </div>
+          </div>
+
+          <!-- CARD 4 -->
+          <div
+            onclick="
+              openModal(
+                './assets/images/G-strings.jpeg',
+                './assets/images/G-strings2.jpeg',
+                './assets/images/G-strings3.jpeg',
+                'Brand Identity Poster Design',
+                'Designed this flyer to promote their brand and engage their audience on social media platforms.',
+              )
+            "
+            class="portfolio-card min-w-[280px] md:min-w-[45%] lg:min-w-[30%] group relative rounded-2xl overflow-hidden bg-zinc-900 shadow-lg hover:shadow-glowStrong transition duration-500 cursor-pointer"
+          >
+            <img
+              src="./assets/images/G-strings.jpeg"
+              class="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+            ></div>
+
+            <div
+              class="absolute bottom-0 left-0 right-0 p-6 translate-y-6 group-hover:translate-y-0 transition duration-500"
+            >
+              <span class="text-xs uppercase text-primary tracking-widest">
+                Brand Identity Poster Design
+              </span>
+
+              <h3 class="text-xl font-semibold mt-2 mb-3">G-Strings</h3>
+
+              <button
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-black transition"
+              >
+                View More →
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dots -->
+        <div class="portfolio-dots flex justify-center gap-3 mt-6"></div>
+      </div>
+    </section>
+
+            <!-- ================= PROJECTS 5 ================= -->
+    <section class="px-6 md:px-10 lg:px-24 py-24 bg-black to-black text-white">
+      <div>
+        <p class="mb-8 text-primary uppercase text-sm tracking-widest mb-2">
+          Poster Designs
+        </p>
+      </div>
+
+      <!-- Slider Wrapper -->
+      <div class="portfolio-wrapper relative mt-10">
+        <!-- Fade Edges -->
+        <div
+          class="pointer-events-none absolute left-0 top-0 h-full w-16 bg-gradient-to-r from-black to-transparent z-10"
+        ></div>
+
+        <div
+          class="pointer-events-none absolute right-0 top-0 h-full w-16 bg-gradient-to-l from-black to-transparent z-10"
+        ></div>
+
+        <!-- Left Arrow -->
+        <button
+          class="portfolio-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 bg-black/70 hover:bg-primary text-white hover:text-black w-10 h-10 rounded-full flex items-center justify-center transition"
+        >
+          ‹
+        </button>
+
+        <!-- Right Arrow -->
+        <button
+          class="portfolio-next absolute right-3 top-1/2 -translate-y-1/2 z-20 bg-black/70 hover:bg-primary text-white hover:text-black w-10 h-10 rounded-full flex items-center justify-center transition"
+        >
+          ›
+        </button>
+
+        <!-- Track -->
+        <div
+          class="portfolio-slider flex gap-8 overflow-x-hidden scroll-smooth py-6"
+        >
+          <!-- CARD 1 -->
+          <div
+            onclick="
+              openModal(
+                './assets/images/Hiring1.jpeg',
+                './assets/images/Hiring2.jpeg',
+                './assets/images/Hiring3.jpeg',
+                'Poster Design',
+                'Crafted these poster designs for a brand, to promote their services and engage their audience on all social media platforms.',
+              )
+            "
+            class="portfolio-card min-w-[280px] md:min-w-[45%] lg:min-w-[30%] group relative rounded-2xl overflow-hidden bg-zinc-900 shadow-lg hover:shadow-glowStrong transition duration-500 cursor-pointer"
+          >
+            <img
+              src="./assets/images/Hiring1.jpeg"
+              class="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
+            />
+
+            <!-- Overlay -->
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+            ></div>
+
+            <!-- Content -->
+            <div
+              class="absolute bottom-0 left-0 right-0 p-6 translate-y-6 group-hover:translate-y-0 transition duration-500"
+            >
+              <span class="text-xs uppercase text-primary tracking-widest">
+                Poster Design
+              </span>
+
+              <h3 class="text-xl font-semibold mt-2 mb-3">Hiring Poster</h3>
+
+              <button
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-black transition"
+              >
+                View More →
+              </button>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div
+            onclick="
+              openModal(
+                './assets/images/Travel.jpeg',
+                './assets/images/Travel2.jpeg',
+                './assets/images/Travel3.jpeg',
+                'Poster Design',
+                'Crafted this poster design for a brand, to promote their services and engage their audience on social media platforms.',
+              )
+            "
+            class="portfolio-card min-w-[280px] md:min-w-[45%] lg:min-w-[30%] group relative rounded-2xl overflow-hidden bg-zinc-900 shadow-lg hover:shadow-glowStrong transition duration-500 cursor-pointer"
+          >
+            <img
+              src="./assets/images/Travel.jpeg"
+              class="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+            ></div>
+
+            <div
+              class="absolute bottom-0 left-0 right-0 p-6 translate-y-6 group-hover:translate-y-0 transition duration-500"
+            >
+              <span class="text-xs uppercase text-primary tracking-widest">
+                
+                Poster Design
+              </span>
+
+              <h3 class="text-xl font-semibold mt-2 mb-3">
+                Travel Poster
+              </h3>
+
+              <button
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-black transition"
+              >
+                View More →
+              </button>
+            </div>
+          </div>
+
+                 <!-- CARD 5 -->
+          <div
+            onclick="
+              openModal(
+                './assets/images/Business flyer.jpeg',
+                './assets/images/Business flyer.jpeg',
+                './assets/images/Business flyer.jpeg',
+                'Poster Design',
+                'Crafted this poster design for a brand, to promote their services and engage their audience on social media platforms.',
+              )
+            "
+            class="portfolio-card min-w-[280px] md:min-w-[45%] lg:min-w-[30%] group relative rounded-2xl overflow-hidden bg-zinc-900 shadow-lg hover:shadow-glowStrong transition duration-500 cursor-pointer"
+          >
+            <img
+              src="./assets/images/Business flyer.jpeg"
+              class="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+            ></div>
+
+            <div
+              class="absolute bottom-0 left-0 right-0 p-6 translate-y-6 group-hover:translate-y-0 transition duration-500"
+            >
+              <span class="text-xs uppercase text-primary tracking-widest">
+                
+                Poster Design
+              </span>
+
+              <h3 class="text-xl font-semibold mt-2 mb-3">
+                Business Flyer Poster
+              </h3>
+
+              <button
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-black transition"
+              >
+                View More →
+              </button>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div
+            onclick="
+              openModal(
+                './assets/images/Real estate.jpeg',
+                './assets/images/Real estate2.jpeg',
+                './assets/images/Real estate3.jpeg',
+                'Poster Design',
+                'Crafted this poster design for a brand, to promote their services and engage their audience on social media platforms.',
+              )
+            "
+            class="portfolio-card min-w-[280px] md:min-w-[45%] lg:min-w-[30%] group relative rounded-2xl overflow-hidden bg-zinc-900 shadow-lg hover:shadow-glowStrong transition duration-500 cursor-pointer"
+          >
+            <img
+              src="./assets/images/Real estate.jpeg"
+              class="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+            ></div>
+
+            <div
+              class="absolute bottom-0 left-0 right-0 p-6 translate-y-6 group-hover:translate-y-0 transition duration-500"
+            >
+              <span class="text-xs uppercase text-primary tracking-widest">
+                Poster Design
+              </span>
+
+              <h3 class="text-xl font-semibold mt-2 mb-3">
+                Real Estate Poster
+              </h3>
+
+              <button
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-black transition"
+              >
+                View More →
+              </button>
+            </div>
+          </div>
+
+          <!-- CARD 4 -->
+          <div
+            onclick="
+              openModal(
+                './assets/images/Telectric.jpeg',
+                './assets/images/Telectric.jpeg',
+                './assets/images/Telectric.jpeg',
+                'Poster Design',
+                'Crafted this poster design for a Telectric worldwide, to promote their services, products and engage their audience on social media platforms.',
+              )
+            "
+            class="portfolio-card min-w-[280px] md:min-w-[45%] lg:min-w-[30%] group relative rounded-2xl overflow-hidden bg-zinc-900 shadow-lg hover:shadow-glowStrong transition duration-500 cursor-pointer"
+          >
+            <img
+              src="./assets/images/Telectric.jpeg"
+              class="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+            ></div>
+
+            <div
+              class="absolute bottom-0 left-0 right-0 p-6 translate-y-6 group-hover:translate-y-0 transition duration-500"
+            >
+              <span class="text-xs uppercase text-primary tracking-widest">
+                Poster Design
+              </span>
+
+              <h3 class="text-xl font-semibold mt-2 mb-3">Telectric Poster</h3>
+
+              <button
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-black transition"
+              >
+                View More →
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dots -->
+        <div class="portfolio-dots flex justify-center gap-3 mt-6"></div>
+      </div>
+    </section>
+
+               <!-- ================= PROJECTS 5 ================= -->
+    <section class="px-6 md:px-10 lg:px-24 py-24 bg-gray-900 to-black text-white">
+      <div>
+        <p class="mb-8 text-primary uppercase text-sm tracking-widest mb-2">
+          Bonus Designs
+        </p>
+      </div>
+
+      <!-- Slider Wrapper -->
+      <div class="portfolio-wrapper relative mt-10">
+        <!-- Fade Edges -->
+        <div
+          class="pointer-events-none absolute left-0 top-0 h-full w-16 bg-gradient-to-r from-black to-transparent z-10"
+        ></div>
+
+        <div
+          class="pointer-events-none absolute right-0 top-0 h-full w-16 bg-gradient-to-l from-black to-transparent z-10"
+        ></div>
+
+        <!-- Left Arrow -->
+        <button
+          class="portfolio-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 bg-black/70 hover:bg-primary text-white hover:text-black w-10 h-10 rounded-full flex items-center justify-center transition"
+        >
+          ‹
+        </button>
+
+        <!-- Right Arrow -->
+        <button
+          class="portfolio-next absolute right-3 top-1/2 -translate-y-1/2 z-20 bg-black/70 hover:bg-primary text-white hover:text-black w-10 h-10 rounded-full flex items-center justify-center transition"
+        >
+          ›
+        </button>
+
+        <!-- Track -->
+        <div
+          class="portfolio-slider flex gap-8 overflow-x-hidden scroll-smooth py-6"
+        >
+          <!-- CARD 1 -->
+          <div
+            onclick="
+              openModal(
+                './assets/images/New month1.jpeg',
+                './assets/images/New week.jpeg',
+                './assets/images/New week.jpeg',
+                'New Week/Month Design',
+                'Crafted these designs for a brand, to promote their services and engage their audience on all social media platforms.',
+              )
+            "
+            class="portfolio-card min-w-[280px] md:min-w-[45%] lg:min-w-[30%] group relative rounded-2xl overflow-hidden bg-zinc-900 shadow-lg hover:shadow-glowStrong transition duration-500 cursor-pointer"
+          >
+            <img
+              src="./assets/images/New month1.jpeg"
+              class="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
+            />
+
+            <!-- Overlay -->
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+            ></div>
+
+            <!-- Content -->
+            <div
+              class="absolute bottom-0 left-0 right-0 p-6 translate-y-6 group-hover:translate-y-0 transition duration-500"
+            >
+              <span class="text-xs uppercase text-primary tracking-widest">
+                Poster Design
+              </span>
+
+              <h3 class="text-xl font-semibold mt-2 mb-3">New Week/Month Poster</h3>
+
+              <button
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-black transition"
+              >
+                View More →
+              </button>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div
+            onclick="
+              openModal(
+                './assets/images/New month2.jpeg',
+                './assets/images/New month2.jpeg',
+                './assets/images/New month2 .jpeg',
+                'New Month Design',
+                'Crafted this poster design for a brand, to promote their services and engage their audience on social media platforms.',
+              )
+            "
+            class="portfolio-card min-w-[280px] md:min-w-[45%] lg:min-w-[30%] group relative rounded-2xl overflow-hidden bg-zinc-900 shadow-lg hover:shadow-glowStrong transition duration-500 cursor-pointer"
+          >
+            <img
+              src="./assets/images/New month2.jpeg"
+              class="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+            ></div>
+
+            <div
+              class="absolute bottom-0 left-0 right-0 p-6 translate-y-6 group-hover:translate-y-0 transition duration-500"
+            >
+              <span class="text-xs uppercase text-primary tracking-widest">
+                
+                Poster Design
+              </span>
+
+              <h3 class="text-xl font-semibold mt-2 mb-3">
+                New Month Design
+              </h3>
+
+              <button
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-black transition"
+              >
+                View More →
+              </button>
+            </div>
+          </div>
+
+                 <!-- CARD 3 -->
+          <div
+            onclick="
+              openModal(
+                './assets/images/New month3.jpeg',
+                './assets/images/New month3.jpeg',
+                './assets/images/New month3.jpeg',
+                'New Month Design',
+                'Crafted this new month flyer design for a brand, to promote their services and engage their audience on social media platforms.',
+              )
+            "
+            class="portfolio-card min-w-[280px] md:min-w-[45%] lg:min-w-[30%] group relative rounded-2xl overflow-hidden bg-zinc-900 shadow-lg hover:shadow-glowStrong transition duration-500 cursor-pointer"
+          >
+            <img
+              src="./assets/images/New month3.jpeg"
+              class="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+            ></div>
+
+            <div
+              class="absolute bottom-0 left-0 right-0 p-6 translate-y-6 group-hover:translate-y-0 transition duration-500"
+            >
+              <span class="text-xs uppercase text-primary tracking-widest">
+                
+                Poster Design
+              </span>
+
+              <h3 class="text-xl font-semibold mt-2 mb-3">
+                New Month Poster Design
+              </h3>
+
+              <button
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-black transition"
+              >
+                View More →
+              </button>
+            </div>
+          </div>
+
+          <!-- CARD 4 -->
+          <div
+            onclick="
+              openModal(
+                './assets/images/Software designs1.jpeg',
+                './assets/images/Software designs2.jpeg',
+                './assets/images/Software designs3.jpeg',
+                'Software Design',
+                'Crafted this software design for a brand, to promote their services and engage their audience on social media platforms.',
+              )
+            "
+            class="portfolio-card min-w-[280px] md:min-w-[45%] lg:min-w-[30%] group relative rounded-2xl overflow-hidden bg-zinc-900 shadow-lg hover:shadow-glowStrong transition duration-500 cursor-pointer"
+          >
+            <img
+              src="./assets/images/Software designs1.jpeg"
+              class="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+            ></div>
+
+            <div
+              class="absolute bottom-0 left-0 right-0 p-6 translate-y-6 group-hover:translate-y-0 transition duration-500"
+            >
+              <span class="text-xs uppercase text-primary tracking-widest">
+                Poster Design
+              </span>
+
+              <h3 class="text-xl font-semibold mt-2 mb-3">
+                Tech Poster Design
+              </h3>
+
+              <button
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-black transition"
+              >
+                View More →
+              </button>
+            </div>
+          </div>
+
+          <!-- CARD 5 -->
+          <div
+            onclick="
+              openModal(
+                './assets/images/Software designs4.jpeg',
+                './assets/images/Software designs5.jpeg',
+                './assets/images/Software designs6.jpeg',
+                'Software Design',
+                'Crafted this software design for a brand, to promote their services and engage their audience on social media platforms.',
+              )
+            "
+            class="portfolio-card min-w-[280px] md:min-w-[45%] lg:min-w-[30%] group relative rounded-2xl overflow-hidden bg-zinc-900 shadow-lg hover:shadow-glowStrong transition duration-500 cursor-pointer"
+          >
+            <img
+              src="./assets/images/Software designs4.jpeg"
+              class="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+            ></div>
+
+            <div
+              class="absolute bottom-0 left-0 right-0 p-6 translate-y-6 group-hover:translate-y-0 transition duration-500"
+            >
+              <span class="text-xs uppercase text-primary tracking-widest">
+                Poster Design
+              </span>
+
+              <h3 class="text-xl font-semibold mt-2 mb-3">
+                Tech Poster Design
+              </h3>
+
+              <button
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-black transition"
+              >
+                View More →
+              </button>
+            </div>
+          </div>
+
+             <!-- CARD 6 -->
+          <div
+            onclick="
+              openModal(
+                './assets/images/Realmadrid.jpeg',
+                './assets/images/Realmadrid.jpeg',
+                './assets/images/Realmadrid.jpeg',
+                'Football Flyer Design',
+                'Crafted this design for Real Madrid, to promote their match and engage their audience on social media platforms.',
+              )
+            "
+            class="portfolio-card min-w-[280px] md:min-w-[45%] lg:min-w-[30%] group relative rounded-2xl overflow-hidden bg-zinc-900 shadow-lg hover:shadow-glowStrong transition duration-500 cursor-pointer"
+          >
+            <img
+              src="./assets/images/Realmadrid.jpeg"
+              class="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+            ></div>
+
+            <div
+              class="absolute bottom-0 left-0 right-0 p-6 translate-y-6 group-hover:translate-y-0 transition duration-500"
+            >
+              <span class="text-xs uppercase text-primary tracking-widest">
+                Poster Design
+              </span>
+
+              <h3 class="text-xl font-semibold mt-2 mb-3">
+                Football Flyer Design
+              </h3>
+
+              <button
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-black transition"
+              >
+                View More →
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dots -->
+        <div class="portfolio-dots flex justify-center gap-3 mt-6"></div>
+      </div>
+    </section>
+
+                 <!-- ================= PROJECTS 6 ================= -->
+    <section class="px-6 md:px-10 lg:px-24 py-24 bg-gray-900 border-t border-primary/40 to-black text-white">
+      <div>
+        <p class="mb-8 text-primary uppercase text-sm tracking-widest mb-2">
+          Logo Designs
+        </p>
+      </div>
+
+      <!-- Slider Wrapper -->
+      <div class="portfolio-wrapper relative mt-10">
+        <!-- Fade Edges -->
+        <div
+          class="pointer-events-none absolute left-0 top-0 h-full w-16 bg-gradient-to-r from-black to-transparent z-10"
+        ></div>
+
+        <div
+          class="pointer-events-none absolute right-0 top-0 h-full w-16 bg-gradient-to-l from-black to-transparent z-10"
+        ></div>
+
+        <!-- Left Arrow -->
+        <button
+          class="portfolio-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 bg-black/70 hover:bg-primary text-white hover:text-black w-10 h-10 rounded-full flex items-center justify-center transition"
+        >
+          ‹
+        </button>
+
+        <!-- Right Arrow -->
+        <button
+          class="portfolio-next absolute right-3 top-1/2 -translate-y-1/2 z-20 bg-black/70 hover:bg-primary text-white hover:text-black w-10 h-10 rounded-full flex items-center justify-center transition"
+        >
+          ›
+        </button>
+
+        <!-- Track -->
+        <div
+          class="portfolio-slider flex gap-8 overflow-x-hidden scroll-smooth py-6"
+        >
+          <!-- CARD 1 -->
+          <div
+            onclick="
+              openModal(
+                './assets/images/Logo1.jpeg',
+                './assets/images/Logo2.jpeg',
+                './assets/images/Logo2.jpeg',
+                'Logo Design',
+                'Crafted this logo design for HSPCC, to promote their ministry and engage their audience on social media platforms.',
+              )
+            "
+            class="portfolio-card min-w-[280px] md:min-w-[45%] lg:min-w-[30%] group relative rounded-2xl overflow-hidden bg-zinc-900 shadow-lg hover:shadow-glowStrong transition duration-500 cursor-pointer"
+          >
+            <img
+              src="./assets/images/Logo1.jpeg"
+              class="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
+            />
+
+            <!-- Overlay -->
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+            ></div>
+
+            <!-- Content -->
+            <div
+              class="absolute bottom-0 left-0 right-0 p-6 translate-y-6 group-hover:translate-y-0 transition duration-500"
+            >
+              <span class="text-xs uppercase text-primary tracking-widest">
+                Logo Design
+              </span>
+
+              <h3 class="text-xl font-semibold mt-2 mb-3">HSPCC Logo</h3>
+
+              <button
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-black transition"
+              >
+                View More →
+              </button>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div
+            onclick="
+              openModal(
+                './assets/images/Logo3.jpeg',
+                './assets/images/Logo4.jpeg',
+                './assets/images/Logo4.jpeg',
+                'Logo Design',
+                'Crafted this logo design for Haven-Wear, to promote their services, products and engage their audience on social media platforms.',
+              )
+            "
+            class="portfolio-card min-w-[280px] md:min-w-[45%] lg:min-w-[30%] group relative rounded-2xl overflow-hidden bg-zinc-900 shadow-lg hover:shadow-glowStrong transition duration-500 cursor-pointer"
+          >
+            <img
+              src="./assets/images/Logo3.jpeg"
+              class="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+            ></div>
+
+            <div
+              class="absolute bottom-0 left-0 right-0 p-6 translate-y-6 group-hover:translate-y-0 transition duration-500"
+            >
+              <span class="text-xs uppercase text-primary tracking-widest">
+                
+                Logo Design
+              </span>
+
+              <h3 class="text-xl font-semibold mt-2 mb-3">
+                Haven-Wear Logo
+              </h3>
+
+              <button
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary px-4 py-2 rounded-full hover:bg-primary hover:text-black transition"
+              >
+                View More →
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dots -->
+        <div class="portfolio-dots flex justify-center gap-3 mt-6"></div>
+      </div>
+    </section>
+
+    <!-- ================= MODAL ================= -->
+    <div
+      id="projectModal"
+      class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden items-center justify-center px-4"
+    >
+      <div
+        class="bg-zinc-900 max-w-4xl w-full rounded-2xl overflow-hidden shadow-xl relative animate-scaleIn"
+      >
+        <!-- Close -->
+        <button
+          onclick="closeModal()"
+          class="absolute top-4 right-4 text-white text-2xl hover:text-primary transition"
+        >
+          ✕
+        </button>
+
+        <!-- Content -->
+        <div class="grid md:grid-cols-2 gap-6 p-8">
+          <!-- Images -->
+          <div class="space-y-4">
+            <img
+              id="modalMainImg"
+              onclick="openImage(this.src)"
+              class="w-full h-64 object-cover rounded-lg cursor-zoom-in hover:opacity-90 transition"
+            />
+
+            <div class="grid grid-cols-2 gap-4">
+              <img
+                id="modalImg1"
+                onclick="openImage(this.src)"
+                class="h-32 object-cover rounded-lg cursor-zoom-in hover:opacity-90 transition"
+              />
+
+              <img
+                id="modalImg2"
+                onclick="openImage(this.src)"
+                class="h-32 object-cover rounded-lg cursor-zoom-in hover:opacity-90 transition"
+              />
+            </div>
+          </div>
+
+          <!-- Text -->
+          <div>
+            <h3 id="modalTitle" class="text-2xl font-bold mb-4"></h3>
+            <p id="modalDesc" class="text-gray-300 leading-relaxed mb-6"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ============ IMAGE LIGHTBOX ============ -->
+    <div
+      id="imageViewer"
+      class="fixed inset-0 bg-black/90 z-[60] hidden items-center justify-center px-4"
+    >
+      <!-- Close -->
+      <button
+        onclick="closeImage()"
+        class="absolute top-6 right-6 text-white text-3xl hover:text-primary transition"
+      >
+        ✕
+      </button>
+
+      <!-- Image -->
+      <img
+        id="viewerImg"
+        class="max-w-full max-h-[90vh] object-contain rounded-xl shadow-2xl animate-scaleIn"
+      />
+    </div>
+
+    <div class="border-t border-primary/40 mb-6"></div>
+
+    <!-- ================= CALL TO ACTION ================= -->
+    <section class="py-28 bg-black relative">
+      <div class="max-w-4xl mx-auto text-center px-4">
+        <!-- Heading -->
+        <h2
+          class="text-4xl md:text-5xl font-bold text-white leading-tight mb-4"
+        >
+          Let's Create Something
+          <span class="block text-red-600">Amazing Together</span>
+        </h2>
+
+        <!-- Sub Text -->
+        <p class="text-gray-400 text-sm md:text-base mb-10">
+          Ready to elevate your brand with exceptional design?
+        </p>
+
+        <!-- Button -->
+        <a
+          href="./contact.html"
+          class="inline-block bg-red-600 text-white px-8 py-3 rounded-full font-medium text-sm transition duration-300 hover:bg-red-700 hover:scale-105"
+        >
+          Start Your Project
+        </a>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer
+      class="bg-gradient-to-br from-gray-900 text-white px-6 md:px-10 lg:px-24 pt-24 pb-10"
+    >
+      <!-- Top Bar -->
+      <div
+        class="flex flex-col md:flex-row justify-between items-center mb-10 gap-6"
+      >
+        <!-- Logo -->
+        <div class="flex items-center gap-2 font-bold text-lg">
+          <span class="text-primary text-xl">WELLS</span>
+        </div>
+
+        <!-- Tagline -->
+        <p class="text-sm text-gray-400">
+          Your Idea, My Craft. <br />Let's build something extraordinary
+          together.
+        </p>
+      </div>
+
+      <div class="border-t border-white/10 mb-16"></div>
+
+      <!-- Links Section -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-20">
+        <!-- Column 2 -->
+        <div>
+          <h4 class="font-semibold mb-4">About</h4>
+
+          <ul class="space-y-3 text-gray-400 text-sm">
+            <li>
+              <a href="./about.html" class="hover:text-primary">About Me</a>
+            </li>
+            <li>
+              <a href="./work.html" class="hover:text-primary">Experience</a>
+            </li>
+            <li><a href="./work.html" class="hover:text-primary">Skills</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div>
+          <h4 class="font-semibold mb-4">Connect</h4>
+
+          <ul class="space-y-3 text-gray-400 text-sm">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/godswill-harry-"
+                class="hover:text-primary"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/harrison_wells0712/"
+                class="hover:text-primary"
+                >Instagram</a
+              >
+            </li>
+            <li><a href="https://www.fb.com/l/6lp1kJRRR" class="hover:text-primary">Facebook</a></li>
+            <li><a href="https://github.com/wELLs-bit" class="hover:text-primary">GitHub</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4 -->
+        <div>
+          <h4 class="font-semibold mb-4">© 2025</h4>
+
+          <p class="text-sm text-gray-400 mb-4">All rights reserved</p>
+
+          <!-- Social Icons -->
+          <div class="flex gap-3">
+            <a
+              href="https://www.linkedin.com/in/godswill-harry-"
+              class="w-9 h-9 border border-white/20 rounded-full flex items-center justify-center hover:border-primary hover:text-primary transition"
+            >
+              in
+            </a>
+
+            <a
+              href="https://www.instagram.com/harrison_wells0712/"
+              class="w-9 h-9 border border-white/20 rounded-full flex items-center justify-center hover:border-primary hover:text-primary transition"
+            >
+              IG
+            </a>
+
+                    <a
+              href="https://github.com/wELLs-bit"
+              class="w-9 h-9 border border-white/20 rounded-full flex items-center justify-center hover:border-primary hover:text-primary transition"
+            >
+              GIT
+            </a>
+
+            <a
+              href="https://www.fb.com/l/6lp1kJRRR"
+              class="w-9 h-9 border border-white/20 rounded-full flex items-center justify-center hover:border-primary hover:text-primary transition"
+            >
+              FB
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mb-6"></div>
+
+      <!-- Copyright -->
+      <p class="text-center text-xs text-gray-500">Powered by WELLS</p>
+    </footer>
+
+    <!-- MENU-HAMBURGER SCRIPT -->
+    <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const closeMenu = document.getElementById("closeMenu");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.remove("translate-x-full");
+        mobileMenu.classList.add("translate-x-0");
+      });
+
+      closeMenu.addEventListener("click", () => {
+        mobileMenu.classList.remove("translate-x-0");
+        mobileMenu.classList.add("translate-x-full");
+      });
+
+      // Close when clicking a link
+      document.querySelectorAll("#mobileMenu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.remove("translate-x-0");
+          mobileMenu.classList.add("translate-x-full");
+        });
+      });
+    </script>
+
+    <!-- Scroll To Top Button Script -->
+    <script>
+      const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          // Show
+          scrollTopBtn.classList.remove(
+            "translate-x-20",
+            "opacity-0",
+            "pointer-events-none",
+          );
+
+          scrollTopBtn.classList.add("translate-x-0", "opacity-100");
+        } else {
+          // Hide
+          scrollTopBtn.classList.add(
+            "translate-x-20",
+            "opacity-0",
+            "pointer-events-none",
+          );
+
+          scrollTopBtn.classList.remove("translate-x-0", "opacity-100");
+        }
+      });
+
+      scrollTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    </script>
+
+    <!-- MODAL SCRIPT -->
+    <script>
+      const modal = document.getElementById("projectModal");
+
+      const mainImg = document.getElementById("modalMainImg");
+      const img1 = document.getElementById("modalImg1");
+      const img2 = document.getElementById("modalImg2");
+
+      const title = document.getElementById("modalTitle");
+      const desc = document.getElementById("modalDesc");
+
+      function openModal(main, extra1, extra2, projectTitle, description) {
+        mainImg.src = main;
+        img1.src = extra1;
+        img2.src = extra2;
+
+        title.textContent = projectTitle;
+        desc.textContent = description;
+
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeModal() {
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+
+        document.body.style.overflow = "auto";
+      }
+
+      const viewer = document.getElementById("imageViewer");
+      const viewerImg = document.getElementById("viewerImg");
+
+      function openImage(src) {
+        viewerImg.src = src;
+
+        viewer.classList.remove("hidden");
+        viewer.classList.add("flex");
+
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeImage() {
+        viewer.classList.add("hidden");
+        viewer.classList.remove("flex");
+
+        document.body.style.overflow = "auto";
+      }
+
+      /* Close on background click */
+      viewer.addEventListener("click", (e) => {
+        if (e.target === viewer) {
+          closeImage();
+        }
+      });
+    </script>
+
+    <!-- PORTFOLIO SCRIPT -->
+    <script>
+      document.querySelectorAll(".portfolio-wrapper").forEach((wrapper) => {
+        const slider = wrapper.querySelector(".portfolio-slider");
+        const cards = wrapper.querySelectorAll(".portfolio-card");
+        const prevBtn = wrapper.querySelector(".portfolio-prev");
+        const nextBtn = wrapper.querySelector(".portfolio-next");
+        const dotsBox = wrapper.querySelector(".portfolio-dots");
+
+        let index = 0;
+        let cardWidth = cards[0].offsetWidth + 32;
+        let autoSlide;
+
+        /* Create Dots */
+        cards.forEach((_, i) => {
+          const dot = document.createElement("button");
+
+          dot.className =
+            "w-3 h-3 rounded-full bg-gray-500 hover:bg-primary transition";
+
+          if (i === 0) dot.classList.add("bg-primary");
+
+          dot.addEventListener("click", () => goToSlide(i));
+
+          dotsBox.appendChild(dot);
+        });
+
+        const dots = dotsBox.children;
+
+        /* Update Dots */
+        function updateDots() {
+          [...dots].forEach((dot) => dot.classList.remove("bg-primary"));
+
+          dots[index].classList.add("bg-primary");
+        }
+
+        /* Go To Slide */
+        function goToSlide(i) {
+          index = i;
+
+          slider.scrollTo({
+            left: cardWidth * index,
+            behavior: "smooth",
+          });
+
+          updateDots();
+        }
+
+        /* Next */
+        function nextSlide() {
+          index++;
+
+          if (index >= cards.length) index = 0;
+
+          goToSlide(index);
+        }
+
+        /* Prev */
+        function prevSlide() {
+          index--;
+
+          if (index < 0) index = cards.length - 1;
+
+          goToSlide(index);
+        }
+
+        /* Buttons */
+        nextBtn.addEventListener("click", nextSlide);
+        prevBtn.addEventListener("click", prevSlide);
+
+        /* Auto Slide */
+        function startAuto() {
+          autoSlide = setInterval(nextSlide, 4000);
+        }
+
+        function stopAuto() {
+          clearInterval(autoSlide);
+        }
+
+        startAuto();
+
+        slider.addEventListener("mouseenter", stopAuto);
+        slider.addEventListener("mouseleave", startAuto);
+
+        /* Mobile Swipe */
+        let startX = 0;
+
+        slider.addEventListener("touchstart", (e) => {
+          startX = e.touches[0].clientX;
+        });
+
+        slider.addEventListener("touchend", (e) => {
+          const endX = e.changedTouches[0].clientX;
+          const diff = startX - endX;
+
+          if (diff > 50) nextSlide();
+          if (diff < -50) prevSlide();
+        });
+
+        /* Resize Fix */
+        window.addEventListener("resize", () => {
+          cardWidth = cards[0].offsetWidth + 32;
+
+          goToSlide(index);
+        });
+      });
+    </script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

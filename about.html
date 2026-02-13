@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/svg+xml" href="./assets/images/Wellsfavicon.png" />
+        <title>About me | Wells Resumé</title>
+
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Custom Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#ff2c2c",
+            },
+            boxShadow: {
+              glow: "0 0 20px rgba(255,44,44,0.7)",
+              glowStrong: "0 0 35px rgba(255,44,44,0.9)",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @keyframes scaleIn {
+        from {
+          opacity: 0;
+          transform: scale(0.9);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      .animate-scaleIn {
+        animation: scaleIn 0.3s ease-out;
+      }
+    </style>
+    <style>
+      /* Scrollbar Styling */
+      html {
+        scroll-behavior: smooth;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #1f2937;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #ff2c2c;
+        border-radius: 4px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #e02424;
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white overflow-x-hidden">
+    <!-- ================= NAVBAR ================= -->
+    <nav
+      id="navbar"
+      class="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-6 md:px-10 lg:px-24 py-6 bg-gray-900 border-b-2 border-primary"
+    >
+      <!-- Logo -->
+      <div class="flex items-center gap-2 font-bold text-2xl">
+        <a href="./index.html">
+          <span class="text-primary text-3xl">WELLS</span> </a
+        >
+      </div>
+
+      <!-- Desktop Links -->
+      <div
+        class="hidden md:flex items-center gap-12 text-gray-300 text-base lg:text-lg"
+      >
+        <a
+          href="./work.html"
+          class="relative group hover:text-white transition"
+        >
+          Work
+          <span
+            class="absolute left-0 -bottom-1 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"
+          ></span>
+        </a>
+
+        <a
+          href="./about.html"
+          class="relative group hover:text-white transition"
+        >
+          About
+          <span
+            class="absolute left-0 -bottom-1 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"
+          ></span>
+        </a>
+
+        <a href="./contact.html" class="relative group hover:text-white transition">
+          Contact
+          <span
+            class="absolute left-0 -bottom-1 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"
+          ></span>
+        </a>
+
+        <a
+          href="./contact.html"
+          class="bg-primary px-7 py-3 rounded-full font-semibold hover:shadow-glowStrong transition duration-300"
+        >
+          Hire Me
+        </a>
+      </div>
+
+      <!-- Hamburger -->
+      <button id="menuBtn" class="md:hidden text-white text-3xl">☰</button>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobileMenu"
+        class="fixed top-0 right-0 h-full w-[80%] max-w-sm bg-black border-l border-gray-800 transform translate-x-full transition-transform duration-300 flex flex-col items-center justify-center gap-8 text-gray-300 text-xl md:hidden z-50"
+      >
+        <button
+          id="closeMenu"
+          class="absolute top-6 right-6 text-3xl text-white"
+        >
+          ✕
+        </button>
+
+        <a href="./work.html">Work</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+
+        <a
+          href="./contact.html"
+          class="bg-primary px-8 py-3 rounded-full font-semibold"
+        >
+          Hire Me
+        </a>
+      </div>
+    </nav>
+    <div class="h-[96px]"></div>
+    <!-- ================= SCROLL TO TOP BTN ================= -->
+    <button
+      id="scrollTopBtn"
+      class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-12 h-12 rounded-full bg-primary text-white shadow-lg hover:shadow-glow transition-all duration-500 ease-out translate-x-20 opacity-0 pointer-events-none"
+    >
+      <ion-icon name="arrow-up-outline" class="text-2xl"></ion-icon>
+    </button>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="px-6 md:px-10 lg:px-24 py-24 bg-black text-white">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <!-- LEFT CONTENT -->
+        <div>
+          <!-- Badge -->
+          <span
+            class="inline-block mb-6 px-4 py-1 bg-primary/20 text-primary text-xs rounded-full uppercase tracking-widest"
+          >
+            Who I Am
+          </span>
+
+          <!-- Title -->
+          <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+            God'swill Harry <br />
+            <span class="italic font-light text-gray-400"></span>
+            <span class="text-primary">●</span>
+          </h2>
+
+          <!-- Text -->
+          <div class="space-y-5 text-gray-400 text-sm leading-relaxed max-w-xl">
+            <p>
+              I'm Harry, a passionate software developer and graphics designer with over 1 year of
+              experience creating visual identities that resonate with audiences
+              and drive business growth.
+            </p>
+
+            <p>
+              My approach combines strategic thinking with creative excellence
+              to deliver designs that are not just beautiful, but purposeful.
+            </p>
+
+            <p>
+              Every project is an opportunity to tell a unique story. I believe
+              great design goes beyond aesthetics. it communicates values,
+              builds connections, and creates memorable experiences.
+            </p>
+
+            <p>
+              From startups to established brands, I've had the privilege of
+              working with diverse clients across industries.
+            </p>
+          </div>
+
+          <!-- Resume -->
+          <a
+            href="#"
+            class="inline-block mt-6 text-primary text-sm font-semibold underline underline-offset-4 hover:opacity-80 transition"
+          >
+            Download Resume →
+          </a>
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="relative flex justify-end">
+          <!-- Stats -->
+          <div class="absolute top-0 right-0 flex gap-10 text-right">
+            <div>
+              <h3 class="text-4xl font-bold">50+</h3>
+              <p class="text-xs text-gray-400 mt-1">Projects Completed</p>
+            </div>
+
+            <div>
+              <h3 class="text-4xl font-bold">30+</h3>
+              <p class="text-xs text-gray-400 mt-1">Happy Clients</p>
+            </div>
+          </div>
+
+          <!-- Images Wrapper -->
+          <div class="mt-24 flex flex-col items-end gap-8">
+            <!-- Top Image -->
+            <img
+              src="./assets/images/imag1.jpeg"
+              alt=""
+              class="w-60 h-72 object-cover rounded-2xl shadow-xl"
+            />
+
+            <!-- Bottom Image -->
+            <img
+              src="./assets/images/imag2.jpeg"
+              alt=""
+              class="w-72 h-56 object-cover rounded-2xl shadow-xl"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PHILOSOPHY ================= -->
+    <section
+      class="bg-gradient-to-br from-gray-900 px-6 md:px-10 lg:px-24 py-28 bg-black text-white"
+    >
+      <!-- Header -->
+      <div class="text-center mb-16">
+        <div class="flex justify-center items-center gap-2 mb-3">
+          <span class="w-2 h-2 bg-primary rounded-full"></span>
+          <p class="text-primary uppercase text-sm tracking-widest">
+            MY APPROACH
+          </p>
+        </div>
+
+        <h2 class="text-4xl md:text-5xl font-serif font-bold">
+          Design Philosophy
+        </h2>
+      </div>
+
+      <!-- Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card 1 (Active Look) -->
+        <div
+          class="relative bg-zinc-950 border border-primary/40 rounded-2xl p-8 shadow-lg hover:border-primary hover:shadow-[0_0_25px_rgba(239,68,68,0.25)] transition duration-500"
+        >
+          <!-- Number -->
+          <div
+            class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold mb-6"
+          >
+            01
+          </div>
+
+          <h3 class="text-xl font-semibold mb-3">Strategy First</h3>
+
+          <p class="text-sm text-gray-400 leading-relaxed">
+            Every great design starts with understanding the business goals,
+            target audience, and market landscape. Strategy guides creativity.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="relative bg-zinc-950 border border-primary/40 rounded-2xl p-8 shadow-lg hover:border-primary hover:shadow-[0_0_25px_rgba(239,68,68,0.25)] transition duration-500"
+        >
+          <!-- Number -->
+          <div
+            class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold mb-6"
+          >
+            02
+          </div>
+
+          <h3 class="text-xl font-semibold mb-3">Timeless Aesthetics</h3>
+
+          <p class="text-sm text-gray-400 leading-relaxed">
+            Trends come and go, but great design endures. I focus on creating
+            visuals that remain relevant and impactful for years to come.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="relative bg-zinc-950 border border-primary/40 rounded-2xl p-8 shadow-lg hover:border-primary hover:shadow-[0_0_25px_rgba(239,68,68,0.25)] transition duration-500"
+        >
+          <!-- Number -->
+          <div
+            class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold mb-6"
+          >
+            03
+          </div>
+
+          <h3 class="text-xl font-semibold mb-3">Attention to Detail</h3>
+
+          <p class="text-sm text-gray-400 leading-relaxed">
+            The difference between good and exceptional lies in the details.
+            Every element is carefully crafted to perfection.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS & TOOLS ================= -->
+    <section class="px-6 md:px-10 lg:px-24 py-28 bg-black text-white">
+      <!-- Header -->
+      <div class="text-center mb-20">
+        <div class="flex justify-center items-center gap-2 mb-3">
+          <span class="w-2 h-2 bg-primary rounded-full"></span>
+          <p class="text-primary uppercase text-sm tracking-widest">
+            My Expertise
+          </p>
+        </div>
+
+        <h2 class="text-4xl md:text-5xl font-serif font-bold">
+          Skills & Tools
+        </h2>
+      </div>
+
+      <!-- Content -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <!-- ================= LEFT: SKILLS ================= -->
+        <div>
+          <h3 class="text-xl font-semibold mb-8">Design Skills</h3>
+
+          <!-- Skill -->
+          <div class="mb-6">
+            <div class="flex justify-between text-sm mb-2">
+              <span>Brand Identity Design</span>
+              <span class="text-primary">95%</span>
+            </div>
+
+            <div class="w-full h-2 bg-zinc-800 rounded-full overflow-hidden">
+              <div class="h-full bg-primary w-[95%]"></div>
+            </div>
+          </div>
+
+          <div class="mb-6">
+            <div class="flex justify-between text-sm mb-2">
+              <span>Logo Design</span>
+              <span class="text-primary">98%</span>
+            </div>
+
+            <div class="w-full h-2 bg-zinc-800 rounded-full overflow-hidden">
+              <div class="h-full bg-primary w-[98%]"></div>
+            </div>
+          </div>
+
+          <div class="mb-6">
+            <div class="flex justify-between text-sm mb-2">
+              <span>Print Design</span>
+              <span class="text-primary">90%</span>
+            </div>
+
+            <div class="w-full h-2 bg-zinc-800 rounded-full overflow-hidden">
+              <div class="h-full bg-primary w-[90%]"></div>
+            </div>
+          </div>
+
+          <div class="mb-6">
+            <div class="flex justify-between text-sm mb-2">
+              <span>Digital Graphics</span>
+              <span class="text-primary">92%</span>
+            </div>
+
+            <div class="w-full h-2 bg-zinc-800 rounded-full overflow-hidden">
+              <div class="h-full bg-primary w-[92%]"></div>
+            </div>
+          </div>
+
+                    <div class="mb-6">
+            <div class="flex justify-between text-sm mb-2">
+              <span>Web Design</span>
+              <span class="text-primary">95%</span>
+            </div>
+
+            <div class="w-full h-2 bg-zinc-800 rounded-full overflow-hidden">
+              <div class="h-full bg-primary w-[92%]"></div>
+            </div>
+          </div>
+
+          <div class="mb-6">
+            <div class="flex justify-between text-sm mb-2">
+              <span>UI / UX Design</span>
+              <span class="text-primary">88%</span>
+            </div>
+
+            <div class="w-full h-2 bg-zinc-800 rounded-full overflow-hidden">
+              <div class="h-full bg-primary w-[88%]"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between text-sm mb-2">
+              <span>Typography</span>
+              <span class="text-primary">94%</span>
+            </div>
+
+            <div class="w-full h-2 bg-zinc-800 rounded-full overflow-hidden">
+              <div class="h-full bg-primary w-[94%]"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= RIGHT: TOOLS ================= -->
+        <div>
+          <h3 class="text-xl font-semibold mb-8">Tools & Software</h3>
+
+          <div class="grid grid-cols-2 gap-6">
+            <!-- Photoshop -->
+            <div
+              class="group bg-zinc-950 border border-primary/40 rounded-xl p-5 hover:border-primary hover:shadow-[0_0_20px_rgba(239,68,68,0.25)] transition duration-500"
+            >
+              <div
+                class="w-9 h-9 bg-primary rounded-md flex items-center justify-center mb-4"
+              >
+                <ion-icon
+                  name="image-outline"
+                  class="text-white text-lg"
+                ></ion-icon>
+              </div>
+
+              <p class="text-sm font-semibold">Adobe Photoshop</p>
+            </div>
+
+            <!-- Figma -->
+            <div
+              class="group bg-zinc-950 border border-primary/40 rounded-xl p-5 hover:border-primary hover:shadow-[0_0_20px_rgba(239,68,68,0.25)] transition duration-500"
+            >
+              <div
+                class="w-9 h-9 bg-primary rounded-md flex items-center justify-center mb-4"
+              >
+                <ion-icon
+                  name="color-filter-outline"
+                  class="text-white text-lg"
+                ></ion-icon>
+              </div>
+
+              <p class="text-sm font-semibold">Figma</p>
+            </div>
+
+            <!-- CorelDRAW -->
+            <div
+              class="group bg-zinc-950 border border-primary/40 rounded-xl p-5 hover:border-primary hover:shadow-[0_0_20px_rgba(239,68,68,0.25)] transition duration-500"
+            >
+              <div
+                class="w-9 h-9 bg-primary rounded-md flex items-center justify-center mb-4"
+              >
+                <ion-icon
+                  name="leaf-outline"
+                  class="text-white text-lg"
+                ></ion-icon>
+              </div>
+
+              <p class="text-sm font-semibold">CorelDRAW</p>
+            </div>
+
+            <!-- Canva -->
+            <div
+              class="group bg-zinc-950 border border-primary/40 rounded-xl p-5 hover:border-primary hover:shadow-[0_0_20px_rgba(239,68,68,0.25)] transition duration-500"
+            >
+              <div
+                class="w-9 h-9 bg-primary rounded-md flex items-center justify-center mb-4"
+              >
+                <ion-icon
+                  name="sparkles-outline"
+                  class="text-white text-lg"
+                ></ion-icon>
+              </div>
+
+              <p class="text-sm font-semibold">Canva Pro</p>
+            </div>
+
+            <!-- After Effects -->
+            <div
+              class="group bg-zinc-950 border border-primary/40 rounded-xl p-5 hover:border-primary hover:shadow-[0_0_20px_rgba(239,68,68,0.25)] transition duration-500"
+            >
+              <div
+                class="w-9 h-9 bg-primary rounded-md flex items-center justify-center mb-4"
+              >
+                <ion-icon
+                  name="play-outline"
+                  class="text-white text-lg"
+                ></ion-icon>
+              </div>
+
+              <p class="text-sm font-semibold">After Effects</p>
+            </div>
+
+            <!-- Lightroom -->
+            <div
+              class="group bg-zinc-950 border border-primary/40 rounded-xl p-5 hover:border-primary hover:shadow-[0_0_20px_rgba(239,68,68,0.25)] transition duration-500"
+            >
+              <div
+                class="w-9 h-9 bg-primary rounded-md flex items-center justify-center mb-4"
+              >
+                <ion-icon
+                  name="sunny-outline"
+                  class="text-white text-lg"
+                ></ion-icon>
+              </div>
+
+              <p class="text-sm font-semibold">Lightroom</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="border-t border-primary/40 mb-6"></div>
+
+    <!-- ================= CALL TO ACTION ================= -->
+    <section class="py-28 bg-black relative">
+      <div class="max-w-4xl mx-auto text-center px-4">
+        <!-- Heading -->
+        <h2
+          class="text-4xl md:text-5xl font-bold text-white leading-tight mb-4"
+        >
+          Let's Create Something
+          <span class="block text-red-600">Amazing Together</span>
+        </h2>
+
+        <!-- Sub Text -->
+        <p class="text-gray-400 text-sm md:text-base mb-10">
+          Ready to elevate your brand with exceptional design?
+        </p>
+
+        <!-- Button -->
+        <a
+          href="./contact.html"
+          class="inline-block bg-red-600 text-white px-8 py-3 rounded-full font-medium text-sm transition duration-300 hover:bg-red-700 hover:scale-105"
+        >
+          Start Your Project
+        </a>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer
+      class="bg-gradient-to-br from-gray-900 text-white px-6 md:px-10 lg:px-24 pt-24 pb-10"
+    >
+      <!-- Top Bar -->
+      <div
+        class="flex flex-col md:flex-row justify-between items-center mb-10 gap-6"
+      >
+        <!-- Logo -->
+        <div class="flex items-center gap-2 font-bold text-lg">
+          <span class="text-primary text-xl">WELLS</span>
+        </div>
+
+        <!-- Tagline -->
+        <p class="text-sm text-gray-400">
+          Your Idea, My Craft. <br />Let's build something extraordinary
+          together.
+        </p>
+      </div>
+
+      <div class="border-t border-white/10 mb-16"></div>
+
+      <!-- Links Section -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-20">
+        <!-- Column 2 -->
+        <div>
+          <h4 class="font-semibold mb-4">About</h4>
+
+          <ul class="space-y-3 text-gray-400 text-sm">
+            <li>
+              <a href="./about.html" class="hover:text-primary">About Me</a>
+            </li>
+            <li>
+              <a href="./work.html" class="hover:text-primary">Experience</a>
+            </li>
+            <li><a href="./work.html" class="hover:text-primary">Skills</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div>
+          <h4 class="font-semibold mb-4">Connect</h4>
+
+          <ul class="space-y-3 text-gray-400 text-sm">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/godswill-harry-"
+                class="hover:text-primary"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/harrison_wells0712/"
+                class="hover:text-primary"
+                >Instagram</a
+              >
+            </li>
+            <li><a href="https://www.fb.com/l/6lp1kJRRR" class="hover:text-primary">Facebook</a></li>
+            <li><a href="https://github.com/wELLs-bit" class="hover:text-primary">GitHub</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4 -->
+        <div>
+          <h4 class="font-semibold mb-4">© 2025</h4>
+
+          <p class="text-sm text-gray-400 mb-4">All rights reserved</p>
+
+          <!-- Social Icons -->
+          <div class="flex gap-3">
+            <a
+              href="https://www.linkedin.com/in/godswill-harry-"
+              class="w-9 h-9 border border-white/20 rounded-full flex items-center justify-center hover:border-primary hover:text-primary transition"
+            >
+              in
+            </a>
+
+            <a
+              href="https://www.instagram.com/harrison_wells0712/"
+              class="w-9 h-9 border border-white/20 rounded-full flex items-center justify-center hover:border-primary hover:text-primary transition"
+            >
+              IG
+            </a>
+
+                    <a
+              href="https://github.com/wELLs-bit"
+              class="w-9 h-9 border border-white/20 rounded-full flex items-center justify-center hover:border-primary hover:text-primary transition"
+            >
+              GIT
+            </a>
+
+            <a
+              href="https://www.fb.com/l/6lp1kJRRR"
+              class="w-9 h-9 border border-white/20 rounded-full flex items-center justify-center hover:border-primary hover:text-primary transition"
+            >
+              FB
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mb-6"></div>
+
+      <!-- Copyright -->
+      <p class="text-center text-xs text-gray-500">Powered by WELLS</p>
+    </footer>
+
+    <!-- MENU-HAMBURGER SCRIPT -->
+    <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const closeMenu = document.getElementById("closeMenu");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.remove("translate-x-full");
+        mobileMenu.classList.add("translate-x-0");
+      });
+
+      closeMenu.addEventListener("click", () => {
+        mobileMenu.classList.remove("translate-x-0");
+        mobileMenu.classList.add("translate-x-full");
+      });
+
+      // Close when clicking a link
+      document.querySelectorAll("#mobileMenu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.remove("translate-x-0");
+          mobileMenu.classList.add("translate-x-full");
+        });
+      });
+    </script>
+
+    <!-- Scroll To Top Button Script -->
+    <script>
+      const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          // Show
+          scrollTopBtn.classList.remove(
+            "translate-x-20",
+            "opacity-0",
+            "pointer-events-none",
+          );
+
+          scrollTopBtn.classList.add("translate-x-0", "opacity-100");
+        } else {
+          // Hide
+          scrollTopBtn.classList.add(
+            "translate-x-20",
+            "opacity-0",
+            "pointer-events-none",
+          );
+
+          scrollTopBtn.classList.remove("translate-x-0", "opacity-100");
+        }
+      });
+
+      scrollTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    </script>
+  </body>
+</html>
